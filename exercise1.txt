@@ -1,7 +1,7 @@
->db.Les3.find({scores:{$elemMatch: {score: { $gt: 87, $lt: 93 } }}});
+п»ї>db.Les3.find({scores:{$elemMatch: {score: { $gt: 87, $lt: 93 } }}});
 
 
-Результат выполнения:
+Р РµР·СѓР»СЊС‚Р°С‚ РІС‹РїРѕР»РЅРµРЅРёСЏ:
 /* 1 */
 {
     "_id" : 4,
