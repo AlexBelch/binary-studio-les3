@@ -1,0 +1,58 @@
+﻿>db.Les3.update({"name" : "Dusti Lemmond"}, {$set: {accepted: "true"}},{multi: true})
+
+Результат выполнения:
+WriteResult({ "nMatched" : 2, "nUpserted" : 0, "nModified" : 2 })
+
+
+Просмотр изменений
+>db.Les3.find({"name" : "Dusti Lemmond"})
+
+/* 1 */
+{
+    "_id" : 60,
+    "name" : "Dusti Lemmond",
+    "scores" : [ 
+        {
+            "type" : "exam",
+            "score" : 17.2772532768186
+        }, 
+        {
+            "type" : "quiz",
+            "score" : 83.2443941472583
+        }, 
+        {
+            "type" : "homework",
+            "score" : 81.8425872261181
+        }, 
+        {
+            "type" : "homework",
+            "score" : 24.704337643075
+        }
+    ],
+    "accepted" : "true"
+}
+
+/* 2 */
+{
+    "_id" : 2001,
+    "name" : "Dusti Lemmond",
+    "scores" : [ 
+        {
+            "type" : "exam",
+            "score" : 76.845556522431
+        }, 
+        {
+            "type" : "quiz",
+            "score" : 28.0283822082624
+        }, 
+        {
+            "type" : "homework",
+            "score" : 62.4694400341178
+        }, 
+        {
+            "type" : "homework",
+            "score" : 78.7344682496355
+        }
+    ],
+    "accepted" : "true"
+}
